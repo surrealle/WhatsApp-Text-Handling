@@ -1,7 +1,8 @@
 
 # WhatsApp Text Formatter
 
-A **React-based web tool** to format text copied from Word and other sources into a **WhatsApp-friendly** format. It ensures that the structure and bullet points remain intact when pasted into WhatsApp.
+Ever had problems retaining the same format when copy+pasting from Word or other sources into WHatsApp desktop?
+This is a **React-based web tool** to format text copied from Word and other sources into a **WhatsApp-friendly** format. It ensures that the structure and bullet points remain intact when pasted into WhatsApp.
 
 ---
 
@@ -84,8 +85,7 @@ This project is **open-source** under the [MIT License](LICENSE).
 ---
 
 ## Acknowledgments
-Built by **Nico**.  
-Inspired by the need to **format text cleanly** for WhatsApp messages.
+Built by **Nico**. 
 
 ---
 
