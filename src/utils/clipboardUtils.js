@@ -35,7 +35,6 @@ export const handlePaste = (
     addToHistory(processedText);
     setStatus((prev) => ({ ...prev, charCount: processedText.length }));
   } catch (error) {
-    console.error("Paste error:", error);
     setStatus((prev) => ({
       ...prev,
       error:

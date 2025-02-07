@@ -3,7 +3,7 @@ export const sanitizeInput = (text) =>
     .replace(/[\u0000-\u001F\u007F-\u009F]/g, "")
     .replace(/\u200B/g, "")
     .replace(/[\u2018\u2019]/g, "'")
-    .replace(/[\u201C\u201D]/g, '"')
+    .replace(/[\u201C\u201D]/g, "\"")
     .replace(/\s+$/gm, "")
     .replace(/\t/g, "  ")
     .replace(/\r\n/g, "\n");
