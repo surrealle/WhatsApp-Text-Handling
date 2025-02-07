@@ -1,70 +1,92 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WhatsApp Text Formatter
 
-## Available Scripts
+A **React-based web tool** to format text copied from Word and other sources into a **WhatsApp-friendly** format. It ensures that the structure and bullet points remain intact when pasted into WhatsApp.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
+- ✅ Preserves **formatting** when copying text from Word  
+- ✅ Converts **bold** to `*bold*`, **italic** to `_italic_`  
+- ✅ Ensures bullet points (`•`) are **kept properly formatted**  
+- ✅ Provides **Undo & Redo** functionality  
+- ✅ Includes a **Copy button** to quickly copy formatted text  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### 1. Clone the Repository
+```sh
+git clone https://github.com/surrealle/whatsapp-text-formatter.git
+cd whatsapp-text-formatter
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Install Dependencies
+```sh
+npm install
+```
 
-### `npm run build`
+### 3. Run the App
+```sh
+npm start
+```
+The app should now be running at **`http://localhost:3000`**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+1. **Paste** your text into the input field.  
+2. The tool **automatically formats** the text.  
+3. Click **"Copy"** to copy the formatted text.  
+4. Paste it into **WhatsApp**, and the formatting remains intact.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Formatting Rules
+| **Input** | **Output (WhatsApp Format)** |
+|-----------|-----------------------------|
+| **Bold** | `*Bold*` |
+| *Italic* | `_Italic_` |
+| ✅ Section Titles | Preserved |
+| • Bullet points | Preserved |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
+- **React.js** (Frontend UI)
+- **CSS Modules** (Styling)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Troubleshooting
+### Common Issues & Fixes
+**1. Formatting is incorrect**  
+- Ensure `processWordHtml` is correctly handling `innerHTML`.  
+- Debug with `console.log(text)` before formatting.
 
-## Learn More
+**2. Undo/Redo doesn't work**  
+- Ensure history state is properly updated when the text changes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+1. **Fork the repo**  
+2. **Create a new branch** (`git checkout -b feature-name`)  
+3. **Make your changes** and commit (`git commit -m "Added new feature"`)  
+4. **Push** to your fork and submit a **Pull Request**  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
+This project is **open-source** under the [MIT License](LICENSE).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
+Built by **Nico**.  
+Inspired by the need to **format text cleanly** for WhatsApp messages.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Have a suggestion? Open an issue or create a pull request.  
