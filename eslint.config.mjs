@@ -27,7 +27,7 @@ export default [
       },
 
       ecmaVersion: 2022,
-      sourceType: "commonjs",
+      sourceType: "module",
 
       parserOptions: {
         ecmaFeatures: {
